@@ -1,0 +1,79 @@
+<head>
+    <style>
+      label {
+        background-color: #a21702;
+        width: auto;
+        padding: 10px 50px 10px 20px;
+        margin-left: 0px;
+        display: inline-block;
+        text-align: left;
+        -webkit-font-smoothing: antialiased; 
+        letter-spacing: -0.5px;
+        animation: fade 1s ease-in-out 0s 1 normal forwards;
+      }
+      @keyframes fade {
+          0% {
+            opacity: 0;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
+      
+      .labelText {
+        font-family: Helvetica, sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+        color: #ededed;
+        animation: blink 2s ease-in-out 1s 1 normal none;
+      }
+      @keyframes blink {
+          0%,
+          100% {
+            opacity: 1;
+          }
+
+          50% {
+            opacity: 0.5;
+          }
+        }
+  
+      @media all and (max-width:639px) {
+        .mobile-320 {
+          width: 320px !important;
+          padding: 0 !important;
+        }
+  
+        .mobile-300 {
+          width: 300px !important;
+          padding: 0 !important;
+        }
+  
+        label {
+          margin-left: 10px;
+        }
+        .labelText {
+        font-size: 18px;
+      }
+    }
+    </style>
+  </head>
+  
+  <table style="background-color: transparent;" width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td align="center" valign="top">
+        <table class="mobile-320" width="640" cellpadding="0" cellspacing="0" border="0">
+          <table class="mobile-300" width="500" cellpadding="0" cellspacing="0" border="0">
+            <td align="left" valign="top">
+              <label>
+                <div class="labelText">
+                    Breaking News
+                </div>
+              </label>
+            </td>
+          </table>
+        </table>
+      </td>
+    </tr>
+  </table>
