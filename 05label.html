@@ -1,25 +1,9 @@
 <head>
   <style>
-    .labelBox {
-      background-color: #a21702;
-      width: auto;
-      padding: 30px 50px 10px 20px;
-      margin-left: 0px;
-      display: inline-block;
-      text-align: left;
-      -webkit-font-smoothing: antialiased;
-      letter-spacing: -0.5px;
-    }
-
-
-    .labelText {
-      font-family: Helvetica, sans-serif;
-      font-size: 22px;
-      font-weight: 800;
-      color: #ededed;
-    }
-
-    @media all and (max-width:639px) {
+      .w-label {
+          margin-left: 70px !important;
+        }
+    @media all and (max-width:640px) {
 
       .mobile-300 {
         width: 300px !important;
@@ -27,11 +11,17 @@
       }
 
       .labelBox {
-        margin-left: 20px;
+        margin-left: 10px;
+        padding: 30px 0px 10px 15px;
+        width: 120px;
+        font-size: 20px;
       }
 
-      .labelText {
-        font-size: 20px;
+      .w-label {
+          margin-left: 20px !important;
+        }
+      labelText {
+        font-size: 18px;
       }
     }
   </style>
@@ -39,13 +29,12 @@
 
 <table style="background-color: transparent;" width="100%" border="0" cellpadding="0" cellspacing="0">
   <tr>
-    <td align="center" valign="top">
+    <td align="left" valign="top">
       <table class="mobile-300" width="640" cellpadding="0" cellspacing="0" border="0">
-        <table class="mobile-300" width="500" cellpadding="0" cellspacing="0" border="0">
-          <td align="left" valign="top" class="labelBox w-pad">
-            <div class="labelText">
-              After Deadline
-            </div>
+        <table class="mobile-300" width="300" cellpadding="0" cellspacing="0" border="0">
+          <td align="left" valign="top" class="labelBox w-label" style="
+                  background-color: #a21702; padding: 30px 60px 10px 20px; display: inline-block; text-align: left;  -webkit-font-smoothing: antialiased; letter-spacing: -0.5px; font-family: Helvetica, sans-serif; font-size: 22px; font-weight: 800;  color: #ededed;">
+              <labelText>After Deadline</labelText>
           </td>
         </table>
       </table>
